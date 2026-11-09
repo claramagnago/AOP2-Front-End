@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202020;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: #d9d9d9;
+    padding: 22px 15px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444444;
+    background-color: #bcbcbc;
+    padding: 9px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background-color: #a0a0a0;
+}
+
+nav .pagina-atual {
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+
+main {
+    background-color: #b3b3b3;
+    padding-bottom: 35px;
+    width: 100%;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+
+.apresentacao {
+    text-align: center;
+    padding: 15px 25px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.titulo h1 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.titulo img {
+    width: 60px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.descricao {
+    background-color: #dedede;
+    color: #333333;
+    padding: 6px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+
+.destaques {
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.destaques h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.card {
+    flex: 1;
+    text-align: center;
+    max-width: 300px;
+}
+
+.card img {
+    width: 100%;
+    max-width: 220px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.card h3 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #222222;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+
+footer {
+    background-color: #d9d9d9;
+    color: #444444;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+
+@media (max-width: 650px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .descricao {
+        font-size: 14px;
+    }
+
+    .container-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+}
